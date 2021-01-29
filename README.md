@@ -12,10 +12,10 @@ The web page should be created using HTML only and should include:
 4. At least one link to another page or part of the same page.
 5. Sections of the text formatted using HTML elements.
 6. A description of the GitHub Workflow:
-  a. What is a commit?
-  b. What is a branch?
-  c. What is a pull request?
-  d. Other information beginner coders would find useful.
+  - What is a commit?
+  - What is a branch?
+  - What is a pull request?
+  - Other information beginner coders would find useful.
 7. A description of the Unix Shell:
   a. How to list the files in a directory.
   b. How to show and change the working directory.
