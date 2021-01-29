@@ -1,5 +1,5 @@
 # Project 1 week 1
-## **Simple Web Page**
+## Simple Web Page
 ---
 The aim of this project is to create a simple page to demonstrate basic HTML skills and your knowledge of Git version control and the Unix shell.
 You will create a simple page or pages describing the Git version control workflow and the unix Shell
