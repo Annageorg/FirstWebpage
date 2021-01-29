@@ -4,17 +4,69 @@
     <title>A Simple First Web Page</title> 
   </head>
   <body>
-    <h1>This page provides information about GitHub and Unix Shell</h1>
+    <p><h1>This page provides information about GitHub and Unix Shell</h1></p>
    <div>
     <h2> 1 Git and GitHub </h2>
-    <p><b>Git</b> is a free an open source distributed version control system. It was originally developed by Linus Tovvalds to manage changes to the Linux kernel.<br/>
-    <b>GitHub</b> is an online service that uses Git to provide code repositories. GitHub has added functionality in comparison, and is one of the most popular code repository 
-    systems worldwide.<br/>In other words Github is a platform that helps people solve different problems by building software together.</p>
-    <img src="pictures/github_flow.png" height="300px" width="800px" alt="An overview of GitHub workflow"><br/>
-    <p>Let's start with <i>what is GitHub?</i></p>
-   </div>
-   <div>
-    <h1>2 Unix Shell</h1>
-   </div>
+    <p>In this section what is Git and GitHub will be explained. <a href="#workflow">Workflow</a>, <a href ="#term"> key termilogy</a>, and <a href="#ways">ways of managing and working with repositories</a> will also be listed and explained.</p>
+
+
+    <p><b>Git</b> is a free an open source distributed version control system. It was originally developed 
+      by Linus Tovvalds<sup><a href="https://en.wikipedia.org/wiki/Linus_Torvalds">[1]</a></sup> to manage changes to the Linux kernel.<br/>
+    <b>GitHub</b> is an online service that uses Git to provide code repositories. 
+      GitHub has added functionality in comparison, and is one of the most popular code repository systems worldwide.<br/>
+    In other words Github is a platform that helps people solve different problems by building software together.</p>
+    
+    <p>As it is seen in the picture below in any repository there is the main/master branch. This code could be anything from software in ATMs, to Game development, to farming.<br/>
+      In order to solve issues, bugs, or even upgrade features of software; changes in the main code need to happen. However, it would not be efficient if a team of developers <br/> 
+      started updating and testing new features in the main code. This is be because the main code could activelly be connected to multiple platforms and a small change could <br/> 
+      lead to a catastrophic failure of the whole system.</p>
+    <p id="workflow"><u>So the solution to that is version control!!</u><br/>
+      With this version control, branches are created from the main branch of the code. With this the users can now add new code, and test features without altering the main.<br/>
+      When changes are made on that branch the users can commit those changes to the branch/branches (multiple commits can happen). <br/>
+      Once the user/users feel that the changes are ready to be reviewed, then a pull request can be made. With this the team can now see the changes, review them and discuss, and ultimetly<br/>
+      merge the new code to the main. Useful link to understand what Git is can be found <a href="https://www.youtube.com/watch?v=w3jLJU7DT5E&ab_channel=GitHub">here</a>.</p>
+    <p><i>The picture below represents the main steps of the GitHub workflow:</i></p>
+    <img src="pictures/github_flow.png" height="300px" width="900px" alt="An overview of GitHub workflow"><br/>
+
+    <p id="term">Key termilogy in understanding Git and GitHub:</p>
+    <dl>
+      <dt><b>Repository</b></dt>
+      <dd>Is the container of all code</dd>
+      <dt><b>Branch</b></dt>
+      <dd>Is the separate working area for code under development</dd>
+      <dt><b>Clone</b></dt>
+      <dd>Is the connected copy of the repository locally</dd>
+      <dt><b>Fork</b></dt>
+      <dd>Is the copy of the repository locally</dd>
+      <dt><b>Commit</b></dt>
+      <dd>Is the addition of the code to the branch</dd>
+      <dt><b>Pull</b></dt>
+      <dd>Publish the committed changes to the repository to review and eventually merge</dd>
+      <dt><b>Merge</b></dt>
+      <dd>Is the merging from a branch into another</dd>
+    </dl>
+    <p>It is worth noting that you can work with repositories online, but also locally. The preferred way is to work on a repository locally and use the internet connection <br/>
+      for clone, fork, fetch, pull, and merge.</p>
+    <p id="ways">There are <b>4</b> main ways in creating and working with repositories</p>
+    <ol>
+      <li>Through the GitHub online interface</li>
+      <li>Through terminals</li>
+      <li>Through IDEs</li>
+      <li>A combination of the above</li>
+    </ol>
+    </div>
+
+    <div>
+      <h2>2 Unix Shell</h2>
+      <p>A Unix shell is a command-line interpreter or shell that provides a command line user interface for Unix-like operating systems.<br/> 
+        The shell is both an Command Line Interface (CLI) and a scripting language, and is used by the operating system to control the execution of the system 
+        using shell scripts.<sup><a href="https://en.wikipedia.org/wiki/Unix_shell">[2]</a></sup><br/>
+        In the shell it is less obvious how to perform tasks but allows powerful automation and is useful for any programmer in managing files and automating basic tasks.<br/>
+        </p>
+
+        <img src="pictures/gitbash_ui.PNG" alt="User Interface of GitBash"> 
+
+    </div>
+
   </body>
 </html>
