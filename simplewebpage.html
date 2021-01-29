@@ -5,9 +5,12 @@
   </head>
   <body>
     <p><h1>This page provides information about GitHub and Unix Shell</h1></p>
+    <p>Click on these to jump to section <a href="#workflow"> GitHub Workflow</a> , 
+      <a href ="#term"> GitHub key termilogy</a> , <a href="#ways"> Ways of managing and working with repositories</a> 
+      <a href="#unix"> Unix</a> , <a href="#commands"> Common Unix commands</a></p>
    <div>
     <h2> 1 Git and GitHub </h2>
-    <p>In this section what is Git and GitHub will be explained. <a href="#workflow">Workflow</a>, <a href ="#term"> key termilogy</a>, and <a href="#ways">ways of managing and working with repositories</a> will also be listed and explained.</p>
+    <p>In this section what is Git and GitHub will be explained.</p>
 
 
     <p><b>Git</b> is a free an open source distributed version control system. It was originally developed 
@@ -28,7 +31,7 @@
     <p><i>The picture below represents the main steps of the GitHub workflow:</i></p>
     <img src="pictures/github_flow.png" height="300px" width="900px" alt="An overview of GitHub workflow"><br/>
 
-    <p id="term">Key termilogy in understanding Git and GitHub:</p>
+    <h3 id="term">Key termilogy in understanding Git and GitHub:</h3>
     <dl>
       <dt><b>Repository</b></dt>
       <dd>Is the container of all code</dd>
@@ -57,15 +60,35 @@
     </div>
 
     <div>
-      <h2>2 Unix Shell</h2>
+      <h2 id="unix">2 Unix Shell</h2>
       <p>A Unix shell is a command-line interpreter or shell that provides a command line user interface for Unix-like operating systems.<br/> 
-        The shell is both an Command Line Interface (CLI) and a scripting language, and is used by the operating system to control the execution of the system 
+        The shell is both a Command Line Interface (CLI) and a scripting language, and is used by the operating system to control the execution of the system 
         using shell scripts.<sup><a href="https://en.wikipedia.org/wiki/Unix_shell">[2]</a></sup><br/>
         In the shell it is less obvious how to perform tasks but allows powerful automation and is useful for any programmer in managing files and automating basic tasks.<br/>
-        </p>
-
-        <img src="pictures/gitbash_ui.PNG" alt="User Interface of GitBash"> 
-
+        The shell used below is GitBash. You can see from the picture below that the UI is a black box, where the user can input commands to control the operating system.</p>
+        <img src="pictures/gitbash_ui.PNG" alt="User Interface of GitBash">
+      <p>The syntax of the scripting language follows the following <b>Command   Flag/Option/Switch   Argument</b>.<br/></p> 
+      <p>One of the basic commands is the <code>ls</code>, which is used to list the files in the directory. Using the <code>ls -a</code> all files are listed, including the hidden items.<br/>
+        In order to show the directory the user is at the <code>pwd</code> command is used, whereas to change directory it is
+        <code>cd <i>foldername</i></code></p><br/>
+      <p>To create new directory is <code>mkdir <i>directoryname</i></code>. To create new file is <code>touch <i>name.extension</i></code> and to delete a file is 
+        <code>rm <i>name.extension</i></code> </p>
+      <p>In order to understand directories better, the picture below depicts an example root directory structure. The shell starts at the root directory and when using the <code>cd</code><br/>
+        command it goes one layer down. So is for example you are at the work folder and want to go to carol folder, then you can use <code>cd ..</code>.
+        The <code>..</code> represents one folder above.<br/> 
+        If you wanted to go two folders above then <code>cd ../..</code> would be used. This is a fast way to work your way through different folders without having to type the whole<br/>
+         path all the time</p>
+        <p>For example used above:<img src="pictures/root.png" alt="Example root directory structure"></p>
+        <h3 id="commands">Useful shell commands:</h3>
+        <ul>
+          <li><code>ls</code> or <code>ls -a</code> , lists files in a directory</li>
+          <li><code>pwd</code> print working directory</li>
+          <li><code>cd </code> or <code>cd ..</code> , change directory</li>
+          <li><code>mkdir <i>directoryname</i></code> create a new directory</li>
+          <li><code>touch <i>filename.extension</i></code> create new file</li>
+          <li><code>rm <i>filename.extension</i></code> deletes file, and <code>rm -r <i>directoryname</i></code> deletes a directory</li>
+          <li><i>Some useful flags <code>--help</code> , provides manual of command used <code>-i</code> , usually used with <code>rm</code> to be asked if you want to delete</i></li>
+        </ul>
     </div>
 
   </body>
